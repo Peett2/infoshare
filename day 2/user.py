@@ -4,9 +4,9 @@ name = input('Wpisz swoje imie:\n')
 print('Twoje imie to:',name)
 
 # the good way
-msg = 'Twoje imie to:'
+msg = 'Twoje imie to:\n'
 print(msg, name)
 
 # even better way
-msg = f'Twoje imie to: {name}'
+msg = f'Twoje imie to:\n{name}'
 print(msg)
