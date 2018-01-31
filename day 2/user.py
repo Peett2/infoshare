@@ -6,3 +6,7 @@ print('Twoje imie to:',name)
 # the good way
 msg = 'Twoje imie to:'
 print(msg, name)
+
+# even better way
+msg = f'Twoje imie to: {name}'
+print(msg)
