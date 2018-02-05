@@ -15,5 +15,9 @@ print(type(age))
 
 age = 52
 print(age)
-
+age='cośtam'
+print(type(age))
+age = True
+print(type(age))
 # @TODO wyświetl typy wszystkich zmiennych
+print(0.1+0.1+0.1)
