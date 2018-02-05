@@ -1,22 +1,22 @@
-# a=1
-# b=2
-# print(a+b)
-# print(a-b)
-# print(b**4)
-# print(b^4)
-#
-# c=3
-# print(c)
-# c += 4  # c = c+4 compound operator - zmiana wartości zmiennej
-# c -= 2
-# c *= 2
-# c /= 2
-# print(c)
-#
-# print(c-1)
-#
-# c = c % 2
-# print(c)
+a=1
+b=2
+print(a+b)
+print(a-b)
+print(b**5)
+print(b^4)
+
+c=3
+print(c)
+c += 4  # c = c+4 compound operator - zmiana wartości zmiennej
+c -= 2
+c *= 2
+c /= 2
+print(c)
+
+print(c-1)
+
+c = c % 2
+print(c)
 
 text='Ala ma kota'
 text2='Tom\'s house' # escaping character
