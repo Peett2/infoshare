@@ -43,10 +43,23 @@ print('sth2:',sth2)
 steps=text[0:10:2]
 print('steps:',steps)
 
-print(text[0:15],'a')
+print(text[0:15],'a')   # w tle wywoływana jest funkcja len()
+                        # i wyświetlane jest tylko to co zostało wpisane
 
 text2=text[::-1]
 print(text2)
 
 print(text.upper())
 print(text.lower())
+
+text = 'O' + text[1:11]
+print(text)
+
+text3 = 'Ala ma kota, kot lubi Alę'
+old = 'kot'
+new = 'pies'
+count = 1
+replaced = text3.replace(old,new,count)
+
+print(text3, id(text3))
+print(replaced, id(replaced))
