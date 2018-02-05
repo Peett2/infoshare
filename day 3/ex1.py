@@ -43,7 +43,7 @@ print('sth2:',sth2)
 steps=text[0:10:2]
 print('steps:',steps)
 
-print(text[0:15],'a')   # w tle wywołana jest funkcja len()
+print(text[0:15],'a')   # w tle wywołana jest funkcja: len()
                         # i wyświetlane jest tylko to co zostało wpisane
 
 text2=text[::-1]
