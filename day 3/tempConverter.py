@@ -6,8 +6,8 @@ temp = input('Podaj liczbę stopni w C lub F:\n').upper()
 #     C = (F - 32) * (5/9)
 #     F = C * (9 / 5) + 32
 
-
 value = int(temp[-10:-1])
+
 if temp.endswith('C'):
     print('Podana temperatura w Farenheitach wynosi',
             value * 9/5+32,'stopni Celsjusza')
