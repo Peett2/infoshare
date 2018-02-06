@@ -1,4 +1,4 @@
-digit=int(input('podaj liczbe: \n'))
+digit = int(input('podaj liczbe: \n'))
 
 is_even = digit % 2
 
