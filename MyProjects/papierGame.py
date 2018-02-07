@@ -20,14 +20,14 @@ elif user == 'p':
 else:
     sys.exit('Niedozwolona wartość')
 
-comp = randint(1,3)
-if comp == 1:
-    comp = k
-elif comp == 2:
-    comp = n
-elif comp == 3:
-    comp = p
-
+# comp = randint(1,3)
+# if comp == 1:
+#     comp = k
+# elif comp == 2:
+#     comp = n
+# elif comp == 3:
+#     comp = p
+comp = 'k'
 print(' ',comp)
 
 if (user == k and comp == n) or (user == n and comp == p) \
