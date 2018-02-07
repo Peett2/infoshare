@@ -5,7 +5,7 @@
 counter = 0
 value = int(input('Podaj liczbę: \n'))
 
-while counter < value:
+while counter <= value:
     # within loop
     print('Hello',counter)
     counter += 1
