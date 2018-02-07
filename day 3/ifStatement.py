@@ -12,7 +12,7 @@ else:
 if text:
     print ('text is not empty')
 
-#  @todo if 'a' < 'h' < 'z'
+#  if 'a' < 'h' < 'z'
 
 is_rest_equal_to_zero = 4 % 2
 
