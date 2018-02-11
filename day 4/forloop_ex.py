@@ -4,12 +4,26 @@
 # @TODO ile jest liczb przystych ile jest liczb nieparzystych w zbiorze
 # @TODO od start do stop włącznie
 
-start= int(input('Podaj start\n'))
-stop= int(input('Podaj stop\n'))
-krok= int(input('Podaj krok\n'))
-odds=0
-for idx in range(start,stop+1,krok):
-    if idx % 2:
-        odds+=1
+x=input('Podaj dane w formacie: <start,stop,krok>:\n')
 
-print(odds)
+start,stop,krok = x.split(',')
+
+print('Podane dane to:\n', start, stop, krok)
+
+start = int(start)
+stop = int(stop)
+krok = int(krok)
+
+evens = 0
+odds = 0
+
+for idx in range(start, stop+1, krok):
+    if idx % 2:
+        odds += 1
+        print(idx)
+    if idx + 1 % 2:
+        evens += 1
+        print('o',idx)
+
+print('odds: ',odds)
+print('evens: ',evens)
