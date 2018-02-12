@@ -3,7 +3,7 @@ from collections import defaultdict, Counter
 # my_dict = defaultdict(int)
 # print(my_dict['non_existing'])
 
-#  @todo zliczyć ile razy występuje każdy znak w stringu - wykorzystać słownik
+#  zliczyć ile razy występuje każdy znak w stringu - wykorzystać słownik
 
 text = 'ala ma kota, kot ma ale'
 my_dict = dict()
