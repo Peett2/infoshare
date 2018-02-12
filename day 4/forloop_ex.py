@@ -19,11 +19,11 @@ odds = 0
 
 for idx in range(start, stop+1, krok):
     if idx % 2:
-        odds += 1
-        print(idx)
-    if idx + 1 % 2:
         evens += 1
-        print('o',idx)
+        print(idx,';',evens,'evens')
+    elif idx + 1 % 2:
+        odds += 1
+        print(idx,';',odds,'odds')
 
 print('odds: ',odds)
 print('evens: ',evens)
