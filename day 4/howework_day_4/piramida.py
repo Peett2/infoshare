@@ -13,16 +13,16 @@ while hight < 1:
 # narysuj '   ' oraz 1x'#'
 # dodaj 1x' ' do poprzedniego i 2x'#'
 
-no_spaces = 1
-no_hashes = 0
+spaces_no = 1
+hashes_no = 0
 rows = 1
 row_no = 1
 
 while rows <= hight:
-    while no_spaces <= row_no:
+    while spaces_no <= row_no:
         print(' ')
-        no_spaces += 1
-
-    # print('#')
-    # rows += 1
+        spaces_no += 1
+    while hashes_no+1
     print('\n')
+    rows += 1
+    # print('#')
