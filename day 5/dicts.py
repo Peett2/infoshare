@@ -1,3 +1,5 @@
+import copy
+
 phonebook = {
     'Kowalski': 123,
     'Nowak':456,
@@ -7,10 +9,11 @@ phonebook = {
 # pobieranie wartości z klucza kowalski:
 # print (phonebook[lastname])
 
-# lastname = 'XYZ'
-# print(phonebook.get(lastname, 'Brak nazwiska w bazie')
+print(phonebook)
 
-# print(phonebook[lastname])
+lastname = 'XYZ'
+print(phonebook.get(lastname, 'Brak nazwiska w bazie'))
+
 
 new_phonebook = phonebook.copy()
 print(new_phonebook)
