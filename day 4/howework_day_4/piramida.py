@@ -5,24 +5,14 @@
  ###
 #####
 
-hight = int(input('Podaj wysokość piramidy:\n'))
+h = int(input('Podaj wysokość piramidy:\n'))
 
-while hight < 1:
-    hight = int(input('Raczej tak niskiej nie wybudujemy. Spróbuj jeszcze raz:\n'))
+while h < 1:
+    h = int(input('Raczej tak niskiej nie wybudujemy. Spróbuj jeszcze raz:\n'))
 
-# narysuj '   ' oraz 1x'#'
-# dodaj 1x' ' do poprzedniego i 2x'#'
+row = 1
 
-spaces_no = 1
-hashes_no = 0
-rows = 1
-row_no = 1
-
-while rows <= hight:
-    while spaces_no <= row_no:
-        print(' ')
-        spaces_no += 1
-    while hashes_no+1
-    print('\n')
-    rows += 1
-    # print('#')
+while h >= 1:
+    print(' ' * h, '#' * row)
+    h -= 1
+    row += 2
