@@ -5,6 +5,8 @@
  ###
 #####
 
+# ask for height
+
 h = int(input('Podaj wysokość piramidy:\n'))
 
 while h < 1:
