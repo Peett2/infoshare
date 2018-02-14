@@ -9,5 +9,5 @@ start = 0
 stop = value
 step = 2
 
-for idx in range(start,stop,step):
+for idx in range(start, stop, step):
     print(idx)

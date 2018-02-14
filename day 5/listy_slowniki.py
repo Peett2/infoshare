@@ -53,13 +53,13 @@ print(id(my_list3))
 # wyszukiwanie elementów
 # print(my_list.index(None))
 
-list_a = [1,2,3]
-list_b = [4,5,6]
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
 # list_a.append(list_b)
 # print(list_a)
 list_a.extend(list_b)
 print(list_a)
 
-list_c = [7,[8,9]]
+list_c = [7, [8, 9]]
 list_b.extend(list_c)
 print(list_b)

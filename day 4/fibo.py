@@ -19,4 +19,3 @@ while x + y < 1000:
     x = y
     y = x + temp
     print(y, end=' ')
-

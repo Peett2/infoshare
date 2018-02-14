@@ -1,5 +1,5 @@
 from collections import defaultdict, Counter
-#
+
 # my_dict = defaultdict(int)
 # print(my_dict['non_existing'])
 
@@ -27,4 +27,3 @@ print(my_dict2)
 print(my_dict2 == my_dict)
 # best way
 print(Counter(text))
-

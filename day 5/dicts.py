@@ -2,8 +2,8 @@ import copy
 
 phonebook = {
     'Kowalski': 123,
-    'Nowak':456,
-    'Iksinski':789
+    'Nowak': 456,
+    'Iksinski': 789
 }
 # lastname = input('Podaj nazwisko:\n')
 # pobieranie wartości z klucza kowalski:
@@ -14,10 +14,9 @@ print(phonebook)
 lastname = 'XYZ'
 print(phonebook.get(lastname, 'Brak nazwiska w bazie'))
 
-
 new_phonebook = phonebook.copy()
 print(new_phonebook)
-new_members = {'XYZ':1, 'ABC':2}
+new_members = {'XYZ': 1, 'ABC': 2}
 new_phonebook.update(new_members)
 print(new_phonebook)
 
