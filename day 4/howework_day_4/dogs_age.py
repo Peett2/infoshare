@@ -17,8 +17,5 @@ elif wiek_psa > 2:
      wiek_staregopsa = wiek2 + 21
      print("Twoj pies jest stary i ma {} lat".format(wiek_staregopsa))
 
-
-
-
 #jesli 3 lub wiecej to x4
 #podaj wiek w ludzkich latach
