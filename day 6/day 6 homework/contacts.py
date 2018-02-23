@@ -10,15 +10,26 @@
 # oraz funkcji. I jeśli damy radę to możemy postarać się stworzyć moduły z
 # oddzielnymi funkcjonalnościami.
 
-format = {'First Name': None, 'Last Name': None, 'Phone': None,
-          'Address': None}
+# formatowanie = (name=None, surname= None, phone=None, addressn=None)
+def contact_input():
+    # contact = [name='None', surname='None', phone='None', address='None']
+    name = input('Input name:\n')
+    # return name
+    print(name)
+    surname = input('Input surname:\n')
+    # return surname
+    print(surname)
+    phone = input('Input phone:\n')
+    # return phone
+    print(phone)
+    address = input('Input address:\n')
+    # return address
+    print(address)
+    contact = [name, surname, phone , address]
+    print(contact)
 
 
-# name = 'pawel'
-# surname = 'jan'
-# phone = '34124314'
-# address = 'costam'
-
+contact_input()
 # zdefiniuj listę
 
 # przypisz jej zmienne
