@@ -9,3 +9,16 @@
 # Python’owych: piszemy docstringi, właściwe i znaczące nazwy zmiennych
 # oraz funkcji. I jeśli damy radę to możemy postarać się stworzyć moduły z
 # oddzielnymi funkcjonalnościami.
+
+contact = [name, surname, phone, address]
+
+name = 'pawel'
+surname = 'jan'
+phone = '34124314'
+address = 'costam'
+
+# zdefiniuj listę
+
+# przypisz jej zmienne
+
+#
