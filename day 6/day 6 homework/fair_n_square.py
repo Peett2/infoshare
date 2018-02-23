@@ -19,3 +19,9 @@
 #       1     4               2
 #       10    120             0
 #       100   1000            2
+
+# funkcja zwracająca odwrocony string
+
+# def odwroc(fraza):
+#     fraza = fraza[::-1]
+#     return fraza

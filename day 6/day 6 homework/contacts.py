@@ -10,15 +10,38 @@
 # oraz funkcji. I jeśli damy radę to możemy postarać się stworzyć moduły z
 # oddzielnymi funkcjonalnościami.
 
-contact = [name, surname, phone, address]
+format = {'First Name': None, 'Last Name': None, 'Phone': None,
+          'Address': None}
 
-name = 'pawel'
-surname = 'jan'
-phone = '34124314'
-address = 'costam'
+
+# name = 'pawel'
+# surname = 'jan'
+# phone = '34124314'
+# address = 'costam'
 
 # zdefiniuj listę
 
 # przypisz jej zmienne
 
-#
+# argument domyslny jest typem referencyjnym
+def dodaj_imie(imie, imiona=[]):
+    imiona.append(imie)
+    return imiona
+
+
+# jesli nie podamy argumentu domyslnego
+# to Python utworzy typ referencyjny tylko przy pierwszym
+# wywolaniu funkcji
+lista_imion = dodaj_imie("Ola")
+print(lista_imion)
+
+# drugie wywolanie i myslimy ze dodajemy imie do nowej listy
+# a okazuje sie ze to jest ta sama lista !
+lista_imion2 = dodaj_imie("Ala")
+print(lista_imion2)
+
+lista_imion3 = dodaj_imie("Piotrek")
+print(lista_imion3)
+
+# zwizualizuj kod na pythontutor.com aby zobaczyc
+# co sie dzieje
