@@ -15,44 +15,47 @@ def contact_input():
     # contact = [name='None', surname='None', phone='None', address='None']
     name = input('Input name:\n')
     # return name
-    print(name)
+    # print(name)
     surname = input('Input surname:\n')
     # return surname
-    print(surname)
+    # print(surname)
     phone = input('Input phone:\n')
     # return phone
-    print(phone)
+    # print(phone)
     address = input('Input address:\n')
     # return address
-    print(address)
-    contact = [name, surname, phone , address]
+    # print(address)
+    contact = [name, surname, phone, address]
     print(contact)
+    return contact
 
 
 contact_input()
+
+
 # zdefiniuj listę
 
 # przypisz jej zmienne
-
-# argument domyslny jest typem referencyjnym
-def dodaj_imie(imie, imiona=[]):
-    imiona.append(imie)
-    return imiona
-
-
-# jesli nie podamy argumentu domyslnego
-# to Python utworzy typ referencyjny tylko przy pierwszym
-# wywolaniu funkcji
-lista_imion = dodaj_imie("Ola")
-print(lista_imion)
-
-# drugie wywolanie i myslimy ze dodajemy imie do nowej listy
-# a okazuje sie ze to jest ta sama lista !
-lista_imion2 = dodaj_imie("Ala")
-print(lista_imion2)
-
-lista_imion3 = dodaj_imie("Piotrek")
-print(lista_imion3)
-
-# zwizualizuj kod na pythontutor.com aby zobaczyc
-# co sie dzieje
+#
+# # argument domyslny jest typem referencyjnym
+# def dodaj_imie(imie, imiona=[]):
+#     imiona.append(imie)
+#     return imiona
+#
+#
+# # jesli nie podamy argumentu domyslnego
+# # to Python utworzy typ referencyjny tylko przy pierwszym
+# # wywolaniu funkcji
+# lista_imion = dodaj_imie("Ola")
+# print(lista_imion)
+#
+# # drugie wywolanie i myslimy ze dodajemy imie do nowej listy
+# # a okazuje sie ze to jest ta sama lista !
+# lista_imion2 = dodaj_imie("Ala")
+# print(lista_imion2)
+#
+# lista_imion3 = dodaj_imie("Piotrek")
+# print(lista_imion3)
+#
+# # zwizualizuj kod na pythontutor.com aby zobaczyc
+# # co sie dzieje
