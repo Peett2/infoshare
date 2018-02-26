@@ -10,52 +10,60 @@
 # oraz funkcji. I jeśli damy radę to możemy postarać się stworzyć moduły z
 # oddzielnymi funkcjonalnościami.
 
-# formatowanie = (name=None, surname= None, phone=None, addressn=None)
-def contact_input():
-    # contact = [name='None', surname='None', phone='None', address='None']
+print('Witaj w książce kontaktów.\n')
+
+contacts_list = []
+
+
+# name = str
+
+def add_contact():
+    '''
+    Adds new contact to the list
+    :return: list
+    '''
     name = input('Input name:\n')
-    # return name
-    # print(name)
-    surname = input('Input surname:\n')
-    # return surname
-    # print(surname)
-    phone = input('Input phone:\n')
-    # return phone
-    # print(phone)
-    address = input('Input address:\n')
-    # return address
-    # print(address)
-    contact = [name, surname, phone, address]
-    print(contact)
-    return contact
+    name.capitalize()
+    contacts_list.append(name)
+    return contacts_list
 
 
-contact_input()
+def contact_search():
+    name = input('Podaj szukaną frazę:\n')
+    if name in contacts_list:
+        print('Kontakt znaleziony:\n', name, '\n')
+    else:
+        print('Nie ma takiego kontaktu. Spróbuj jeszcze raz\n')
+        contact_search()
 
 
-# zdefiniuj listę
+def display_contacts():
+    for no, contact in enumerate(contacts_list, 1):
+        print(no, contact)
+    print('\n')
 
-# przypisz jej zmienne
-#
-# # argument domyslny jest typem referencyjnym
-# def dodaj_imie(imie, imiona=[]):
-#     imiona.append(imie)
-#     return imiona
-#
-#
-# # jesli nie podamy argumentu domyslnego
-# # to Python utworzy typ referencyjny tylko przy pierwszym
-# # wywolaniu funkcji
-# lista_imion = dodaj_imie("Ola")
-# print(lista_imion)
-#
-# # drugie wywolanie i myslimy ze dodajemy imie do nowej listy
-# # a okazuje sie ze to jest ta sama lista !
-# lista_imion2 = dodaj_imie("Ala")
-# print(lista_imion2)
-#
-# lista_imion3 = dodaj_imie("Piotrek")
-# print(lista_imion3)
-#
-# # zwizualizuj kod na pythontutor.com aby zobaczyc
-# # co sie dzieje
+
+def users_choice():
+    decision = int(input('''Co chcesz zrobić?
+    1. Dodaj kontakt
+    2. Szukaj kontaktu
+    3. Wyświetl kontakty
+    0. Opuść program\n
+    '''))
+    if decision == 1:
+        add_contact()
+        print(contacts_list, '\n')
+        users_choice()
+    elif decision == 2:
+        contact_search()
+        users_choice()
+    elif decision == 3:
+        display_contacts()
+        users_choice()
+    elif decision == 0:
+        exit()
+    else:
+        users_choice()
+
+
+users_choice()

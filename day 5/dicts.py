@@ -11,7 +11,7 @@ phonebook = {
 
 print(phonebook)
 
-lastname = 'XYZ'
+lastname = 'Kowalski'
 print(phonebook.get(lastname, 'Brak nazwiska w bazie'))
 
 new_phonebook = phonebook.copy()
