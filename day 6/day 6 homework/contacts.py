@@ -14,7 +14,6 @@ print('Witaj w książce kontaktów.\n')
 
 contacts_list = []
 
-
 # name = str
 
 def add_contact():
@@ -29,9 +28,15 @@ def add_contact():
 
 
 def contact_search():
+    '''
+    Iterates through the list and return value of contact and finds the index
+    :return: index
+    '''
     name = input('Podaj szukaną frazę:\n')
+    # idx = name.index()
     if name in contacts_list:
-        print('Kontakt znaleziony:\n', name, '\n')
+
+        print('Kontakt znaleziony:\n', name, '\n', 'jego index to:')
     else:
         print('Nie ma takiego kontaktu. Spróbuj jeszcze raz\n')
         contact_search()
