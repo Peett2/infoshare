@@ -1,3 +1,0 @@
-To jest pierwsza linijka
-druga linijka, zapisz w trzeciej!
-Moja kolejna linijka z Pythona
