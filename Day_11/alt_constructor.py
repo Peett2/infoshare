@@ -31,13 +31,15 @@ class Osiol(Zwierze):
         print('osiol mowi')
 
     def biegnij(self):
-        print('ja biegne')
+        print('osioł nie biega')
 
 
 class Mul(Osiol, Kon):
     def __init__(self, imie):
         print('init mul')
-        super().__init__(imie)
+        # super().__init__(imie)
+        Osiol.__init__(self, imie)
+        Kon.__init__(self, imie)
 
     def mowi(self):
         print('mowie jestem mułem')

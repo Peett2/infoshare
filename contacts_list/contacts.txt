@@ -1,3 +1,2 @@
-vv,ds,4
-Kowalska,Agata,23
-
+q,w,3
+e,r,5

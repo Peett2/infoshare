@@ -7,7 +7,7 @@ file_path = Path(__file__).absolute().parent.joinpath('contacts.txt')
 # define Person class
 class Person:
     '''
-    Class soring the contact details
+    Class describing the contact details
     '''
 
     def __init__(self, last_name, first_name, age):
@@ -67,7 +67,7 @@ def users_choice(store=[]):
         save_file(file_path, contacts_list)
         # users_choice()
     elif int(decision) == 2:
-        contacts_list = contact_search(contacts_list)
+        contacts_list = contact_search(Person)
         save_file(file_path, contacts_list)
         store[0] = contacts_list
         users_choice()
