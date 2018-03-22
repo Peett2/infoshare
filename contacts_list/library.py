@@ -15,6 +15,16 @@ class Person:
         self.surname = first_name
         self.age = age
 
+    def __str__(self):
+        return f'{self.surname},{self.name},{self.age}'
+
+    def __repr__(self):
+        return self.__str__()
+
+
+# if __name__ == '__main__':
+#     users_choice()
+
 
 def contact_search(contacts_list):
     '''
@@ -41,44 +51,14 @@ def contact_search(contacts_list):
 
 
 def display_contacts(contacts_list):
+    '''
+    Provides list of all the contacts available in contacts.txt file
+    :param contacts_list:
+    :return: list
+    '''
     for no, contact in enumerate(contacts_list, 1):
         print(no, contact)
     print('\n')
-
-
-def users_choice(store=[]):
-    if not store:
-        contacts_list = read_file(file_path)
-        store.append(contacts_list)
-    else:
-        contacts_list = store
-    decision = input('''Co chcesz zrobić?
-    1. Dodaj kontakt
-    2. Szukaj kontaktu
-    3. Wyświetl kontakty
-    0. Opuść program\n
-    ''')
-    while not decision.isdigit():
-        print('Niepoprawny wybór. Spróbuj jeszcze raz\n')
-        users_choice()
-    if int(decision) == 1:
-        add_contact(contacts_list)
-        __str__(Person)
-        save_file(file_path, contacts_list)
-        # users_choice()
-    elif int(decision) == 2:
-        contacts_list = contact_search(Person)
-        save_file(file_path, contacts_list)
-        store[0] = contacts_list
-        users_choice()
-    elif int(decision) == 3:
-        display_contacts(contacts_list)
-        users_choice()
-    elif int(decision) == 0:
-        exit()
-    else:
-        print('Niepoprawny wybór. Spróbuj jeszcze raz\n')
-        users_choice()
 
 
 def add_contact(contacts_list):
@@ -94,7 +74,7 @@ def add_contact(contacts_list):
         first_name = input('Podaj imię:\n')
     age = int(input('Podaj wiek:\n'))
     contact = Person(last_name, first_name, age)
-    contacts_list.append([contact])
+    contacts_list.append(contact)
     print('Kontakt dodany poprawnie\n')
     print(contacts_list, '\n')
 
@@ -107,13 +87,38 @@ def read_file(path):
 def save_file(path, contacts_list):
     with open(path, 'w') as file:
         writer = csv.writer(file)
-        writer.writerows(contacts_list)
+        writer.writerows([contacts_list])
 
 
-if __name__ == '__main__':
-    users_choice()
+def users_choice(store=[]):
+    if not store:
+        contacts_list = read_file(file_path)
+        store.append(contacts_list)
+    else:
+        contacts_list = store
 
-
-def __str__(self):
-    person = Person()
-    return person
+    decision = input('''Co chcesz zrobić?
+    1. Dodaj kontakt
+    2. Szukaj kontaktu
+    3. Wyświetl kontakty
+    0. Opuść program\n
+    ''')
+    while not decision.isdigit():
+        print('Niepoprawny wybór. Spróbuj jeszcze raz\n')
+        users_choice()
+    if decision == '1':
+        add_contact(contacts_list)
+        save_file(file_path, contacts_list)
+        users_choice()
+    elif decision == '2':
+        contacts_list = contact_search(Person)
+        save_file(file_path, contacts_list)
+        store[0] = contacts_list
+        # users_choice()
+    elif decision == '3':
+        display_contacts(contacts_list)
+        # users_choice()
+    elif decision == '0':
+        exit()
+    else:
+        print('Niepoprawny wybór. Spróbuj jeszcze raz\n')
