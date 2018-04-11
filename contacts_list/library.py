@@ -25,7 +25,6 @@ class Person:
 # if __name__ == '__main__':
 #     users_choice()
 
-
 def contact_search(contacts_list):
     '''
     Iterates through the list and return value of contact
